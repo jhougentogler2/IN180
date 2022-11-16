@@ -4,7 +4,7 @@ node() {
   stage('init') {
     deleteDir()
 	checkout scm
-	def folder = "<USERID>-flow4";
+	def folder = "P2004351678-flow4";
     def filePath = folder + ".zip";
     zip dir: folder, glob: '', zipFile: filePath;
   }
